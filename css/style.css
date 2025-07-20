@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --poppins: 'Poppins', sans-serif;
+  --inter: 'Inter', sans-serif;
+  --roboto: 'Roboto', sans-serif;
+  --primary-color: #e02c6d;
+  --secondery-color: #3a3a3a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+body {
+  font-family: var(--poppins);
+}
+
+/* header area */
+header {
+  padding: 70px 0;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-icon,
+.cart-icon {
+  display: none;
+}
+.menu-icon img, .cart-icon img {
+  display: none;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+nav span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+nav span,
+nav ul li a {
+  color: var(--secondery-color);
+}
+nav ul li img {
+  width: 20px;
+}
+.banner {
+  padding: 140px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-content{
+    width: 40%;
+  }
+.banner-content h2 {
+  color: var(--secondery-color);
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.banner-content p {
+  color: var(--secondery-color);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 16px 0;
+}
+.banner-content button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px 10px 24px;
+  border-radius: 41px;
+  background: rgb(224, 44, 109);
+  border: 0;
+}
+.banner-content button span {
+  color: rgb(255, 255, 255);
+  font-family: var(--poppins);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.banner-img {
+  background: url('../images/Circle.svg') no-repeat center center;
+  background-size: contain;
+  padding: 30px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+} /* end header area */
