@@ -34,16 +34,17 @@ body {
 header {
   padding: 70px 0;
 }
-nav{
+nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 530px;
 }
 .menu-icon,
 .cart-icon {
   display: none;
 }
-.menu-icon img, .cart-icon img {
+.menu-icon img,
+.cart-icon img {
   display: none;
 }
 nav ul {
@@ -70,9 +71,9 @@ nav ul li img {
   align-items: center;
   justify-content: space-between;
 }
-.banner-content{
-    width: 40%;
-  }
+.banner-content {
+  width: 40%;
+}
 .banner-content h2 {
   color: var(--secondery-color);
   font-size: 3.25rem;
@@ -117,3 +118,120 @@ nav ul li img {
   display: flex;
   justify-content: center;
 } /* end header area */
+
+/* sponsor area */
+.sponsor {
+  display: grid;
+  grid-template-areas: 'alibaba amazon daraz ebay rak walmart target';
+  border-bottom: 1px solid #c0ccda;
+  padding: 30px 0;
+  margin-bottom: 100px;
+}
+
+.alibaba {
+  grid-area: alibaba;
+}
+.amazon {
+  grid-area: amazon;
+}
+.daraz {
+  grid-area: daraz;
+}
+.ebay {
+  grid-area: ebay;
+}
+.rak {
+  grid-area: rak;
+}
+.walmart {
+  grid-area: walmart;
+}
+.target {
+  grid-area: target;
+} /* end sponsor area **/
+
+/* collection */
+.card {
+  border-radius: 5px;
+  padding: 17px 15px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+}
+.collections {
+  margin: 100px 0;
+}
+.collections h2 {
+  color: var(--secondery-color);
+  font-family: Poppins;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.part-one,
+.part-two,
+.part-three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.card h2 {
+  color: #18191f;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 16px;
+}
+.card h3 {
+  color: #000000de;
+  font-family: var(--inter);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.card div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.card div div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card div img {
+  width: 16px;
+  height: 16px;
+}
+.card div img:last-child {
+  width: 20px;
+  height: 20px;
+}
+.card p {
+  color: rgb(120, 120, 133);
+  font-family: var(--inter);
+  font-size: 1.142857rem;
+  font-weight: 700;
+  line-height: 143%;
+  letter-spacing: 1.8%;
+  text-align: left;
+}
+.card div p {
+  color: rgb(94, 99, 102);
+  font-family: var(--roboto);
+  font-size: 1.14285rem;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  margin-top: 10px;
+}
