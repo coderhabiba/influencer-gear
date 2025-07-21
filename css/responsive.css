@@ -1,4 +1,34 @@
 /* responsive for phn */
+@media screen and (max-width: 410px) {
+  .sponsor {
+    grid-template-areas:
+      'alibaba amazon daraz ebay'
+      'rak walmart target target';
+    gap: 20px;
+    align-items: center;
+  }
+  /* featured */
+  .featured {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .featured-content h2,
+  .featured-content p,
+  .featured-content button {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .featured-img {
+    width: 200px;
+    height: 150px;
+  }
+  .featured-img img {
+    width: 100%;
+    height: 100%;
+  } /* featured */
+}
+
 @media screen and (max-width: 576px) {
   .container {
     width: 90%;
@@ -53,25 +83,49 @@
   }
   .banner .banner-content button {
     margin: 0 auto;
-  }/* end banner area */
-  
+  } /* end banner area */
+
   /* sponsor area */
-  .sponsor{
-    grid-template-areas: "alibaba amazon daraz ebay"
-    "rak walmart target target";
+  .sponsor {
+    grid-template-areas:
+      'alibaba amazon daraz ebay'
+      'rak walmart target target';
     gap: 20px;
     margin: 0 auto;
-  } 
+  }
 
   /* collection */
-  .part-one , .part-two, .part-three{
+  .part-one,
+  .part-two,
+  .part-three {
     flex-direction: column;
+  } /* collection */
+
+  /* featured */
+  .featured {
+    flex-direction: column-reverse;
+    justify-content: center;
   }
+  .featured-content h2,
+  .featured-content p,
+  .featured-content button {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  } 
+  .featured-img {
+    width: 400px;
+    height: 350px;
+  }
+  .featured-img img {
+    width: 100%;
+    height: 100%;
+  }/* featured */
 }
 
 /* responsive for tab */
-@media screen and (min-width:576px) and (max-width:992px) {
-   .container {
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .container {
     width: 90%;
     margin: 0 auto;
   }
@@ -128,23 +182,170 @@
   }
 
   /* sponsor area */
-  .sponsor{
-    grid-template-areas: "alibaba amazon daraz ebay"
-    "rak walmart target target";
+  .sponsor {
+    grid-template-areas:
+      'alibaba amazon daraz ebay'
+      'rak walmart target target';
     gap: 20px;
     margin: 0 auto;
-  }
+  } /* sponsor area */
+
   /* collection */
-  .part-one , .part-two, .part-three{
+  .part-one,
+  .part-two,
+  .part-three {
     flex-direction: column;
+  } /* collection */
+
+  /* featured */
+  .featured {
+    flex-direction: column-reverse;
+    justify-content: center;
   }
+  .featured-content h2,
+  .featured-content p,
+  .featured-content button {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .featured-img {
+    width: 500px;
+    height: 350px;
+  }
+  .featured-img img {
+    width: 100%;
+    height: 100%;
+  }/* featured */
 }
 
-@media screen and (max-width:410px) {
-   .sponsor{
-    grid-template-areas: "alibaba amazon daraz ebay"
-    "rak walmart target target";
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header {
+    padding: 30px 0;
+  }
+  nav {
+    align-items: center;
+  }
+  nav > ul > li {
+    display: none;
+  }
+  nav span {
+    font-size: 1.1rem;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  nav .menu-icon,
+  nav .cart-icon {
+    display: block !important;
+  }
+  .menu-icon img,
+  .cart-icon img {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  /* banner area */
+  .banner {
+    padding: 40px 0 !important;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .banner-content {
+    width: 100%;
+  }
+  .banner-content h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .banner .banner-content h2,
+  .banner .banner-content p {
+    text-align: center;
+  }
+  .banner .banner-content button {
+    margin: 0 auto;
+  }
+
+  /* sponsor area */
+  .sponsor {
+    grid-template-areas:
+      'alibaba amazon daraz ebay'
+      'rak walmart target target';
+    gap: 20px;
+    margin: 0 auto;
+  } /* sponsor area */
+
+  /* collection */
+  .part-one,
+  .part-two,
+  .part-three {
+    flex-direction: column;
+  } /* collection */
+
+  /* featured */
+  .featured {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .featured-content h2,
+  .featured-content p,
+  .featured-content button {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .featured-img {
+    width: 500px;
+    height: 350px;
+  }
+  .featured-img img {
+    width: 100%;
+    height: 100%;
+  }/* featured */
+}
+
+/* laptop */
+@media screen and (min-width:992px) and (max-width: 1200px) {
+  header,main{
+    margin: 0 10%;
+  }
+  nav{
+    gap: 380px;
+  }
+  .sponsor {
+    grid-template-areas:
+      'alibaba amazon daraz ebay rak walmart target target';
     gap: 20px;
     align-items: center;
   }
+  /* featured */
+  .featured {
+    justify-content: space-between;
+  }
+  /* .featured-content h2,
+  .featured-content p,
+  .featured-content button {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .featured-img {
+    width: 200px;
+    height: 150px;
+  }
+  .featured-img img {
+    width: 100%;
+    height: 100%;
+  } featured */
 }
+
