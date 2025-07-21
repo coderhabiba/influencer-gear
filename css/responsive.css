@@ -1,5 +1,24 @@
 /* responsive for phn */
 @media screen and (max-width: 410px) {
+  nav{
+    gap: 0;
+    justify-content: space-between;
+  }
+  nav ul {
+    display: none;
+  }
+  .menu-icon,
+  .cart-icon {
+    display: block !important;
+  }
+
+  .menu-icon img,
+  .cart-icon img {
+    display: block !important;
+    width: 28px;
+    height: 28px;
+  }
+   
   .sponsor {
     grid-template-areas:
       'alibaba amazon daraz ebay'
@@ -29,7 +48,7 @@
     height: 100%;
   } /* featured */
 
-  footer{
+  footer {
     margin-top: 100px;
   }
 }
@@ -44,8 +63,10 @@
   }
   nav {
     align-items: center;
+    gap: 0;
+    justify-content: space-between;
   }
-  nav ul li {
+  nav ul {
     display: none;
   }
   nav span {
@@ -65,6 +86,7 @@
     width: 20px;
     height: 20px;
   }
+
   /* banner area */
   .banner {
     padding: 40px 0 !important;
@@ -128,7 +150,7 @@
     height: 100%;
   } /* featured */
 
-  footer{
+  footer {
     margin-top: 100px;
   }
 }
@@ -144,8 +166,10 @@
   }
   nav {
     align-items: center;
+    justify-content: space-between;
+    gap: 0;
   }
-  nav > ul > li {
+  nav ul {
     display: none;
   }
   nav span {
@@ -161,7 +185,7 @@
   }
   .menu-icon img,
   .cart-icon img {
-    display: block;
+    display: block !important;
     width: 20px;
     height: 20px;
   }
@@ -229,7 +253,7 @@
     height: 100%;
   } /* featured */
 
-  footer{
+  footer {
     margin-top: 100px;
   }
 }
@@ -244,8 +268,9 @@
   }
   nav {
     align-items: center;
+    justify-content: space-between;
   }
-  nav > ul > li {
+  nav ul {
     display: none;
   }
   nav span {
@@ -257,7 +282,7 @@
   }
   nav .menu-icon,
   nav .cart-icon {
-    display: block !important;
+    display: block;
   }
   .menu-icon img,
   .cart-icon img {
@@ -328,8 +353,8 @@
     width: 100%;
     height: 100%;
   } /* featured */
-  
-  footer{
+
+  footer {
     margin-top: 100px;
   }
 }

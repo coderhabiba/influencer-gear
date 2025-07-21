@@ -43,10 +43,10 @@ nav {
 .cart-icon {
   display: none;
 }
-.menu-icon img,
+/* .menu-icon img,
 .cart-icon img {
   display: none;
-}
+} */
 nav ul {
   display: flex;
   align-items: center;
