@@ -11,6 +11,7 @@
   .featured {
     flex-direction: column-reverse;
     justify-content: center;
+    padding: 0 0;
   }
   .featured-content h2,
   .featured-content p,
@@ -27,6 +28,10 @@
     width: 100%;
     height: 100%;
   } /* featured */
+
+  footer{
+    margin-top: 100px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -105,6 +110,7 @@
   .featured {
     flex-direction: column-reverse;
     justify-content: center;
+    padding: 0px 0;
   }
   .featured-content h2,
   .featured-content p,
@@ -112,7 +118,7 @@
     text-align: center;
     margin: 0 auto;
     margin-top: 20px;
-  } 
+  }
   .featured-img {
     width: 400px;
     height: 350px;
@@ -120,7 +126,11 @@
   .featured-img img {
     width: 100%;
     height: 100%;
-  }/* featured */
+  } /* featured */
+
+  footer{
+    margin-top: 100px;
+  }
 }
 
 /* responsive for tab */
@@ -201,6 +211,7 @@
   .featured {
     flex-direction: column-reverse;
     justify-content: center;
+    padding: 0px 0;
   }
   .featured-content h2,
   .featured-content p,
@@ -216,7 +227,11 @@
   .featured-img img {
     width: 100%;
     height: 100%;
-  }/* featured */
+  } /* featured */
+
+  footer{
+    margin-top: 100px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -296,6 +311,7 @@
   .featured {
     flex-direction: column-reverse;
     justify-content: center;
+    padding: 0px 0;
   }
   .featured-content h2,
   .featured-content p,
@@ -311,20 +327,24 @@
   .featured-img img {
     width: 100%;
     height: 100%;
-  }/* featured */
+  } /* featured */
+  
+  footer{
+    margin-top: 100px;
+  }
 }
 
 /* laptop */
-@media screen and (min-width:992px) and (max-width: 1200px) {
-  header,main{
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  header,
+  main {
     margin: 0 10%;
   }
-  nav{
+  nav {
     gap: 380px;
   }
   .sponsor {
-    grid-template-areas:
-      'alibaba amazon daraz ebay rak walmart target target';
+    grid-template-areas: 'alibaba amazon daraz ebay rak walmart target target';
     gap: 20px;
     align-items: center;
   }
@@ -332,20 +352,4 @@
   .featured {
     justify-content: space-between;
   }
-  /* .featured-content h2,
-  .featured-content p,
-  .featured-content button {
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-  .featured-img {
-    width: 200px;
-    height: 150px;
-  }
-  .featured-img img {
-    width: 100%;
-    height: 100%;
-  } featured */
 }
-
